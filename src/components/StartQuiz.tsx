@@ -15,7 +15,7 @@ export const StartQuiz = () => {
           >
             <div className={"flex items-center justify-center gap-4"}>
               <div
-                className={`w-full flex items-center justify-center ${color} w-10 h-10 rounded-md `}
+                className={`flex items-center justify-center ${color} w-10 h-10 rounded-md `}
               >
                 <Image
                   src={quiz.icon}
@@ -26,7 +26,7 @@ export const StartQuiz = () => {
               </div>
               <Link
                 className="font-medium text-[18px] text-dark_blue"
-                href={""}
+                href={`/questions/${quiz.title.toLowerCase()}`}
               >
                 {quiz.title}
               </Link>

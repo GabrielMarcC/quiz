@@ -3,7 +3,7 @@ import { StartQuiz } from "@/components/StartQuiz";
 
 export default function Home() {
   return (
-    <main className="min-w-[375px] min-h-[740px] bg-white_blue py-4 px-6">
+    <main className="min-w-[375px] min-h-[740px] bg-white_blue dark:bg-dark_blue py-4 px-6">
       <Hero />
       <div className="flex flex-col justify-center items-center min-w-[327px] mt-5">
         <h1 className=" text-[40px] font-light">
