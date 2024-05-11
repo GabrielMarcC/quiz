@@ -1,13 +1,13 @@
 import { StartQuiz } from "@/components/StartQuiz";
 
-// import { QuizData } from "@/types";
+import { QuizData } from "@/types";
 
 export const getData = async (): Promise<any> => {
-  // const response = await fetch("http://localhost:3000/api/json", {
-  //   cache: "no-cache",
-  // });
-  // const data: QuizData = await response.json();
-  return [];
+  const response = await fetch("https://quiz-lyart-seven.vercel.app/api/json", {
+    cache: "no-cache",
+  });
+  const data: QuizData = await response.json();
+  return data;
 };
 
 export default async function Home() {
@@ -28,7 +28,7 @@ export default async function Home() {
           </p>
         </div>
         <div className="w-full lg:w-fit h-full mt-16 lg:mt-0">
-          {/* <StartQuiz data={data} /> */}
+          <StartQuiz data={data} />
         </div>
       </div>
     </main>
