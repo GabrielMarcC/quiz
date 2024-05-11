@@ -60,6 +60,7 @@ export const QuizContextProvider = ({ children }: { children: ReactNode }) => {
     setCounterAnswer(0);
     setSelectedAnswer("");
     router.push("/");
+    resetEvaluate();
   };
 
   return (
