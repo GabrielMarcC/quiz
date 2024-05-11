@@ -1,18 +1,12 @@
-import { Checkbox } from "./Checkbox";
-import { MoonLight } from "./svgs/MoonLight";
-import { SunLight } from "./svgs/SunLight";
+import { HeaderCategoryPreview } from "./HeaderCategoryPreview";
+import { ThemeSwitcher } from "./ThemeSwitcher";
 
 export const Header = () => {
   return (
-    <header className="w-full flex justify-end">
-      <div className="flex  items-center justify-center gap-2 w-[130px] h-[28px]">
-        <div>
-          <SunLight color="#626C7F" w={21} h={21} />
-        </div>
-        <Checkbox />
-        <div>
-          <MoonLight color="#626C7F" w={21} h={21} />
-        </div>
+    <header className="py-6 lg:px-12 xl:px-32 lg:pt-9 w-screen flex items-center justify-between bg-transparent px-6">
+      <HeaderCategoryPreview />
+      <div className="flex items-center grow justify-end">
+        <ThemeSwitcher />
       </div>
     </header>
   );

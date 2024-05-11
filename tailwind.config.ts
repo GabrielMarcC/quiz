@@ -82,6 +82,12 @@ const config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      backgroundImage: {
+        ellipse: "url('/Ellipse 8.svg')",
+        ellipse_2: "url('/Ellipse 9.svg')",
+        ellipseDark: "url('/Ellipse-dark 8.svg')",
+        ellipseDark_2: "url('/Ellipse-dark 9.svg')",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
