@@ -28,7 +28,7 @@ export default async function Home() {
           </p>
         </div>
         <div className="w-full lg:w-fit h-full mt-16 lg:mt-0">
-          <StartQuiz data={data} />
+          {/* <StartQuiz data={data} /> */}
         </div>
       </div>
     </main>
