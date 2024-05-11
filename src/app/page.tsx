@@ -3,7 +3,7 @@ import { StartQuiz } from "@/components/StartQuiz";
 import { QuizData } from "@/types";
 
 export const getData = async (): Promise<QuizData> => {
-  const response = await fetch("https://quiz-app-five-ochre.vercel.app/", {
+  const response = await fetch("http://localhost:3000/api/json", {
     cache: "no-cache",
   });
   const data: QuizData = await response.json();
