@@ -26,7 +26,7 @@ export default function RootLayout({
         disableTransitionOnChange
       >
         <body
-          className={`${rubik.className} bg-ellipse dark:bg-ellipseDark bg-no-repeat bg-white_blue dark:bg-dark_blue`}
+          className={`${rubik.className} bg-ellipse dark:bg-ellipseDark bg-no-repeat bg-white_blue dark:bg-dark_blue overflow-x-hidden`}
         >
           <Header />
           <QuizContextProvider>{children}</QuizContextProvider>
