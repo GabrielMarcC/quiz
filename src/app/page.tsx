@@ -3,9 +3,7 @@ import { StartQuiz } from "@/components/StartQuiz";
 import { QuizData } from "@/types";
 
 export const getData = async (): Promise<QuizData> => {
-  const response = await fetch("http://localhost:3000/api/json", {
-    cache: "no-cache",
-  });
+  const response = await fetch("https://quiz-lyart-seven.vercel.app/api/json");
   const data: QuizData = await response.json();
   return data;
 };
