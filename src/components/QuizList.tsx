@@ -52,7 +52,7 @@ export const QuizList = ({ data, name, question }: QuestionsListProps) => {
   };
 
   return (
-    <div className="w-full min-h-screen px-8 pt-8 mb-5 lg:px-12 xl:px-32 lg:pt-0 flex justify-center">
+    <div className="w-full h-fit px-8 pt-8 mb-5 lg:px-12 xl:px-32 lg:pt-0 flex justify-center">
       <div className="max-w-[1440px] mb-5 justify-center lg:gap-[100px] flex flex-col lg:flex-row w-screen">
         <div className="lg:w-[55%] self-start w-full h-fit lg:h-full flex flex-col">
           <span className="italic text-[14px] lg:text-[20px] lg:leading-[20px] text-dark_blue dark:text-skye_blue leading-[150%]">

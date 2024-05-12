@@ -80,10 +80,10 @@ export const QuizOptions = ({
           >
             <div
               className={
-                "w-[100%] lg:text-[28px] lg:leading-[28px] flex items-center  justify-start dark:text-white gap-2"
+                "w-[100%] lg:text-[28px] lg:leading-[28px] flex items-center  justify-start dark:text-white gap-4 lg:gap-8"
               }
             >
-              <p className="bg-gray-100  text-gray_blue rounded-md flex justify-center items-center w-10 h-10">
+              <p className="bg-gray-100  text-gray_blue rounded-md flex justify-center items-center min-w-10 h-10">
                 {letters[index].toUpperCase()}
               </p>
               {option}

@@ -11,7 +11,7 @@ export const getData = async (): Promise<QuizData> => {
 export default async function Home() {
   const data = await getData();
   return (
-    <main className="flex justify-center bg-ellipse_2 dark:bg-ellipseDark_2 bg-no-repeat bg-right-bottom items-center px-[32px] h-screen bg-transparent py-4">
+    <main className="flex justify-center bg-ellipse_2 dark:bg-ellipseDark_2 bg-no-repeat bg-right-bottom items-center px-[32px] h-full bg-transparent py-4">
       <div className="flex flex-col lg:flex-row lg:gap-6 lg:justify-center mt-6 items-center lg:max-w-[1660px] lg:w-screen lg:h-[456px]">
         <div className="w-full lg:max-w-[500px] lg:h-full">
           <h1 className="text-[40px] lg:text-[64px] text-start font-light lg:text-start dark:text-white">

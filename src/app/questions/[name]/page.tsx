@@ -11,7 +11,7 @@ export default async function Questions({
   const data = await getData();
 
   return (
-    <div className="w-full lg:p-0 bg-transparent bg-ellipse_2 dark:bg-ellipseDark_2 bg-no-repeat bg-right-bottom  lg:pt-[100px]">
+    <div className="w-full h-screen flex items-center justify-center  lg:p-0 bg-transparent bg-ellipse_2 dark:bg-ellipseDark_2 bg-no-repeat bg-right-bottom  lg:pt-[100px]">
       <QuizList
         data={data}
         name={params.name}

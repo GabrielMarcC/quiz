@@ -8,19 +8,22 @@ export const Checkbox = () => {
 
   const [checked, setChecked] = useState(false);
 
-  const handleToggle = () => {
+  const switchTheme = () => {
     setChecked(!checked);
     setTheme(theme === "light" ? "dark" : "light");
   };
 
   return (
-    <div className="w-full flex flex-1 relative h-7 bg-dark_purple rounded-full p-1">
+    <div
+      className="w-full flex flex-1 relative h-7 bg-dark_purple rounded-full p-1"
+      onClick={switchTheme}
+    >
       <input
         type="checkbox"
         id="toggle"
         className="hidden"
         checked={checked}
-        onChange={handleToggle}
+        onChange={switchTheme}
       />
       <label
         htmlFor="toggle"
