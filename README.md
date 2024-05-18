@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Quiz app
 
-## Getting Started
+Uma aplicação de perguntas e respostas sobre as tecnologias mais utilizadas no desenvolvimento web.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Desafio
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Seus usuários devem ser capazes de:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Selecionar um assunto do quiz
+- Selecionar uma única resposta de cada pergunta entre uma escolha de quatro
+- Ver uma mensagem de erro ao tentar enviar uma resposta sem fazer uma seleção
+- Ver se eles fizeram uma escolha correta ou incorreta ao enviar uma resposta
+- Passe para a próxima pergunta depois de ver o resultado da pergunta
+- Ver um estado concluído com a pontuação após a pergunta final
+- Jogar novamente para escolher outro assunto
+- Ver o layout ideal para a interface dependendo do tamanho da tela do dispositivo
+- Ver os estados de foco e foco de todos os elementos interativos na página
+- Navegar por todo o aplicativo apenas usando o teclado
+- Bônus: alterar o tema do aplicativo entre claro e escuro
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Funcionalidades
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Selecionar uma categoria de perguntas
+- Selecionar uma única resposta válida
+- Validação de resposta
+- Trocar de página ao concluir a resposta
+- Alternar entre tema claro e escuro
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Stack utilizada
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Nextjs
+- TailwindCSS
+- Shadcn UI
+- Typescript
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+## Deploy
+
+[Clique aqui](https://quiz-lyart-seven.vercel.app/)
